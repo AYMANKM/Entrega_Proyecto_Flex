@@ -14,9 +14,7 @@ header{
   border-bottom: 1px solid #ddd;
 }
 
-html{
-  min-width: 100vw;
-}
+
 
 nav ul{
   display: flex;
@@ -39,20 +37,78 @@ header .logo img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem;
-  
+  padding:5rem;
   flex-wrap: wrap;
 }
 
 .section-1 .text{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  min-width: 30%;
+  gap: 10px;
   max-width: 500px;
   min-width: 500px;
+  max-height: 600px;
   
 }
 
+.section-1 .text h1{
+  font-size: 72px;
+  color: blue;
+}
 .section-1 img{
   max-width: 500px;
+  width: 48%;
+  border: 2px solid red;
+}
+.buttons-2{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.buttons-2 button:first-child{
+  background-color: #0052FF;
+  padding: 13px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.buttons-2 button:nth-child(2){
+  border: none;
+  color: #0052FF;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+@media (max-width:1258px){
+  .section-1 img, nav, .buttons{
+    display: none;
+  }
+}
+
+
+@media (max-width:533px){
+  .section-1 .text{
+  
+    padding: 0 3rem;
+  }
+  .section-1 .text h1{
+    font-size: 25px;
+    color: red;
+  }
+}
+
+@media (max-width:391px){
+  .section-1 .text{
+    padding: 0 6rem;
+  }
+
+  .section-1 .text h1{
+    color: green;
+  }
 }
