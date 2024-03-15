@@ -100,7 +100,7 @@ header .logo img{
     font-size: 30px;
   }
   header img{
-    filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(5px 5px 5px grey);
   }
 }
 
