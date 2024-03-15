@@ -1,11 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-header{
+header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,25 +13,22 @@ header{
   border-bottom: 1px solid #ddd;
 }
 
-
-
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
   margin-bottom: 0;
 }
 
-#icon{
+#icon {
   display: none;
 }
 
-header .logo img{
+header .logo img {
   max-width: 130px;
 }
 
-
-.section-1{
+.section-1 {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -41,7 +37,7 @@ header .logo img{
   flex-wrap: wrap;
 }
 
-.section-1 .text{
+.section-1 .text {
   display: flex;
   flex-direction: column;
   min-width: 30%;
@@ -49,25 +45,24 @@ header .logo img{
   max-width: 500px;
   min-width: 500px;
   max-height: 600px;
-  
 }
 
-.section-1 .text h1{
+.section-1 .text h1 {
   font-size: 72px;
   color: blue;
 }
-.section-1 img{
+.section-1 img {
   max-width: 500px;
   width: 48%;
 }
-.buttons-2{
+.buttons-2 {
   margin-top: 2rem;
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.buttons-2 button:first-child{
-  background-color: #0052FF;
+.buttons-2 button:first-child {
+  background-color: #0052ff;
   padding: 13px 20px;
   color: #ffffff;
   border: none;
@@ -75,40 +70,45 @@ header .logo img{
   font-size: 25px;
   font-weight: 600;
 }
-.buttons-2 button:nth-child(2){
+/* OTRA FORMA DE USAR LOS FIRST-CHILD: "buttons:nth-child(2)", es una forma mucho mejor de controlar cada hijo. */
+.buttons-2 button:nth-child(2) {
   border: none;
-  color: #0052FF;
+  color: #0052ff;
   background-color: transparent;
   font-size: 25px;
   font-weight: 600;
 }
 
-
-@media (max-width:1258px){
-  .section-1 img, nav, .buttons{
+@media (max-width: 1258px) {
+  .section-1 img,
+  nav,
+  .buttons {
     display: none;
-
   }
 }
 
-
-@media (max-width:533px){
-  .section-1 .text{
+@media (max-width: 533px) {
+  .section-1 .text {
     padding: 0 3rem;
   }
-  .section-1 .text h1{
+  .section-1 .text h1 {
     font-size: 30px;
   }
-  header img{
+  header img {
     filter: drop-shadow(5px 5px 5px grey);
+  }
+  .section-1 .text .buttons-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
-@media (max-width:391px){
-  .section-1 .text{
+@media (max-width: 391px) {
+  .section-1 .text {
     padding: 0 6rem;
   }
-  .section-1 .text h1{
+  .section-1 .text h1 {
     color: green;
   }
 }
